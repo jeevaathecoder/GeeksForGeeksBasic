@@ -1,3 +1,6 @@
+https://practice.geeksforgeeks.org/problems/count-digits5716/1?page=1&difficulty[]=-2&sortBy=submissions 
+
+
 int count=0;
          int n=N;
          while(N>0){
