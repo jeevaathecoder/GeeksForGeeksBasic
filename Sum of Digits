@@ -1,0 +1,9 @@
+https://practice.geeksforgeeks.org/problems/sum-of-series2811/1?page=1&difficulty[]=-2&sortBy=submissions 
+
+class Solution {
+    
+    long seriesSum(int n) {
+           long sum=((long)n * ( n + 1 ))/2;
+         return  sum;
+    }
+}
