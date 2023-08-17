@@ -1,0 +1,16 @@
+https://practice.geeksforgeeks.org/problems/reverse-digit0316/1
+
+class Solution
+{
+    public long reverse_digit(long n)
+    {
+        long rev=0;
+        long temp=n;
+        while(temp>0){
+            long digit = temp % 10;
+            rev= rev *10 + digit;
+            temp = temp /10;
+        }
+        return rev;
+    }
+}
