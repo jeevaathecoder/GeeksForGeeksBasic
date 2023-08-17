@@ -1,0 +1,17 @@
+https://practice.geeksforgeeks.org/problems/armstrong-numbers2727/1?page=1&difficulty[]=-2&sortBy=submissions
+
+class Solution {
+    static String armstrongNumber(int n){
+       int sum = 0;
+        int temp = n;
+        while(temp > 0){
+            int digit = temp % 10;
+            int exp = digit * digit * digit;
+            sum += exp;
+            temp = temp/10;
+        }
+        if(sum == n) return "Yes";
+        return "No";
+
+    }
+}
