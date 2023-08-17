@@ -1,0 +1,15 @@
+https://practice.geeksforgeeks.org/problems/small-factorial0854/1?page=5&difficulty[]=-2&sortBy=submissions
+
+class Solution
+{
+    public long find_fact(int n)
+    {
+        // Code here
+        long fact = 1;
+        for(int i=1; i<=n;i++){
+            fact *= i;
+        }//for
+        
+        return fact;
+    }
+}
