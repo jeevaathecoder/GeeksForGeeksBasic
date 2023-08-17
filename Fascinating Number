@@ -1,0 +1,16 @@
+https://practice.geeksforgeeks.org/problems/fascinating-number3751/1?page=3&difficulty[]=-2&sortBy=submissions
+
+class Solution {
+    boolean fascinating(long n) {
+        
+        String str=n+""+(n*2)+""+(n*3);
+        char temp[]={'1','2','3','4','5','6','7','8','9'};
+        char c[]=str.toCharArray();
+        Arrays.sort(c);
+        if(Arrays.equals(c,temp))
+        return true;
+        else
+        return false;
+
+    }
+}
