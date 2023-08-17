@@ -1,0 +1,18 @@
+https://practice.geeksforgeeks.org/problems/program-to-print-reciprocal-of-letters36233623/1
+
+string reciprocalString(string S)
+    {
+        // Write Your code here
+        for(int i=0;i<S.length();i++)
+        {
+            if(int(S[i])>=97 && int(S[i])<=122)
+            {
+                S[i]=char(122-int(S[i])+97);
+            }
+            else if(int(S[i])>=65 && int(S[i])<=90)
+            {
+                S[i]=char(90-int(S[i])+65);
+            }
+        }
+        return S;
+    }
