@@ -1,18 +1,17 @@
 https://practice.geeksforgeeks.org/problems/program-to-print-reciprocal-of-letters36233623/1
 
-string reciprocalString(string S)
-    {
-        // Write Your code here
-        for(int i=0;i<S.length();i++)
-        {
-            if(int(S[i])>=97 && int(S[i])<=122)
-            {
-                S[i]=char(122-int(S[i])+97);
-            }
-            else if(int(S[i])>=65 && int(S[i])<=90)
-            {
-                S[i]=char(90-int(S[i])+65);
+class Solution{
+    static String reciprocalString(String S){
+        String ans="";
+        for(int i=0;i<S.length();i++) {
+            if(S.charAt(i)>='a' && S.charAt(i)<='z') {
+                ans+=(char)('a'+'z'-S.charAt(i));
+            } else if(S.charAt(i)>='A' && S.charAt(i)<='Z') {
+                ans+=(char)('A'+'Z'-S.charAt(i));
+            } else {
+                ans+=S.charAt(i);
             }
         }
-        return S;
-    }
+        return ans;
+    }
+}
